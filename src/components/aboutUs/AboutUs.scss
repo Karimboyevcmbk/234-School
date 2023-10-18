@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.aboutUs{
+    width: 100%;
+    background-color: #181818;
+    border-bottom: 7px solid gold;
+    padding: 140px 70px 140px 70px;
+    .bilmadms{
+        h2{
+            font-size: 40px;
+            color: #fff;
+            font-family: "Montserrat",sans-serif;
+            margin-bottom: 64px;
+        }
+        p{
+            font-size: 18px;
+            color: #fff;
+            font-family: "Montserrat",sans-serif;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .line{
+            border: 1px solid #fff;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .gooo{
+            display: none;
+            max-width: 122px;
+            height: 104px;
+            margin: 0 auto;
+        }
+        .aboutus{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .abotUsTitle{
+                max-width: 800px;
+                color: #fff;
+                font-family: "Montserrat",sans-serif;
+                font-size: 17px;
+                line-height: 30px;
+                font-weight: 500;
+            }
+            img{
+                width: 326px;
+                height: 300px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:1400px){
+    .aboutUs{
+        padding-left: 30px;
+        .bilmadms{
+            max-width: 1350px;
+            margin: 0 auto;
+        }
+    }
+}
+@media only screen and (max-width:900px){
+    .aboutUs{
+        padding: 30px 20px 30px  30px;
+        .bilmadms{
+            .gooo{
+                display: block;
+            }
+            .aboutus{
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+}

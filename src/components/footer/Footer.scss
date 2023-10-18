@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.footerContainer{
+    background-color: #181818;
+    border-bottom: 7px solid gold;
+    footer{
+        width: 100%;
+        padding: 150px 70px;
+        background-color: #181818;
+        h2{
+            font-size: 50px;
+            color: #fff;
+            font-family: 'Montserrat',sans-serif;
+            font-weight: 600;
+        }
+        .footerTitles{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 75px;
+            flex-wrap: wrap;
+            gap: 30px;
+            .title1{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                height: 75px;
+                p{
+                    color: #fff;
+                    font-family: "Montserrat",sans-serif;
+                    font-size: 26px;
+                    font-weight: 600;
+                }
+                .hoverSpan{
+                    overflow: hidden;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    width: 170px;
+                    span{
+                        color: #fff;
+                        font-family: "Montserrat",sans-serif;
+                        font-size: 18px;
+                        font-weight: 400;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                    }
+                    .Lien{
+                        height: 1px ;
+                        background-color: gold;
+                        margin-right: 170px;
+                    }
+                }
+                .hoverSpan:hover{
+                    transition: 0.5s;
+                    span{
+                        color: gold;
+                    }
+                    .Lien{
+                        margin-right: 0;
+                        transition: 0.5s;
+                    }
+                }
+            }
+            .title2{
+                height: auto;
+                gap: 10px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:1500px){
+    .footerContainer{
+        footer{
+            width: 1500px;
+            margin: 0 auto;
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    .footerContainer{
+        footer{
+            padding: 50px 20px;
+            .footerTitles{
+                .hoverSpan{
+                    span{
+                        max-width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}

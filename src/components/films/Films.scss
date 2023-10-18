@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.container2{
+    background-color: #181818;
+    border-bottom: 7px solid gold;
+    height: 100vh;
+    .films{
+        padding: 140px 70px;
+        .kinoSearch2{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h2{
+                font-size: 40px;
+                font-family: "Montserrat",sans-serif;
+                color: #fff;
+            }
+            .selects{
+                display: flex;
+                gap: 20px;
+                select{
+                    background-color: #181818;
+                    color: #fff;
+                    padding: 10px 5px;
+                    max-width: 320px;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    padding-right: 100px;
+                    option{
+                        width: 320px; 
+                    }
+                }
+            }
+        }
+        .mySwiper2{
+            height: 430px;
+            margin-top: 60px;
+            .mySwiperSections2{
+                height: 100%;
+                background-color:#fff ;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                border-radius: 5px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.5s;
+                }
+                img:hover{
+                    width: 115%;
+                    height: 115%;
+                    transition: 0.5s;
+                }
+            }
+            .mySwiperSections2:hover{
+                border: 2px solid gold;
+            }
+        }
+    }
+}
+.swiper-button-next{
+    background-color: #575757;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 10px;
+}
+.swiper-button-prev{
+    background-color: #575757;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 10px;
+}
+.swiper-button-next:hover{
+    border: 1px solid gold;
+    color: gold;
+}
+.swiper-button-prev:hover{
+    border: 1px solid gold;
+    color: gold;
+}
+@media only screen and (max-width:1100px){
+    .container2{
+        .films{
+            .kinoSearch2{
+                display: block;
+            }
+        }
+    }
+}
+@media only screen and (max-width:750px){
+    .container2{
+        .films{
+            padding: 20px ;
+            .kinoSearch2{
+                display: block;
+                .selects{
+                    flex-direction: column;
+                    margin-top: 10px;
+                }
+            }
+            .mySwiper2{
+                height: 350px;
+                .mySwiperSections2{
+                    height: 350px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:1500px){
+    .container2{
+        background-color: #181818;
+        height: 100vh;
+        width: 100%;
+        .films{
+            width: 1500px;
+            margin: 0 auto;
+        }
+    }
+}
+@media only screen and (max-height:9000px){
+    .container2{
+        height: 670px;
+    }
+}
+@media only screen and (max-height:560px){
+    .container2{
+        height: 550px;
+        .films{
+            .mySwiper2{
+                height: 200px;
+                .mySwiperSections2{
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:560px){
+    .container2{
+        height: 670px;
+        .films{
+            .mySwiper2{
+                height: 350px;
+                .mySwiperSections2{
+                    height: 350px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:460px){
+    .container2{
+        height: 550px;
+        .films{
+            .mySwiper2{
+                height: 250px;
+                .mySwiperSections2{
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
